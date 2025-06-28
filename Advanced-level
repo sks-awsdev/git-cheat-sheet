@@ -1,0 +1,82 @@
+Cherry-Picking:
+git cherry-pick <commit-hash>          # Apply a specific commit from another branch
+
+----------------------------
+
+Reflog (Recover Lost Work):
+git reflog                             # Show history of HEAD changes
+git checkout <commit-hash>             # Restore a lost commit
+
+----------------------------
+
+Submodules (Nested Repositories):
+git submodule add <repo-url> <folder>  # Add a submodule
+git clone --recurse-submodules <url>   # Clone a repo with submodules
+git submodule update --init --recursive # Initialize and update all submodules
+
+----------------------------
+
+Bisect (Find the Buggy Commit):
+git bisect start
+git bisect bad                         # Mark current commit as bad
+git bisect good <commit-hash>          # Mark a known good commit
+git bisect good / git bisect bad       # Mark each test
+git bisect reset                       # End bisect and return to HEAD
+
+----------------------------
+
+Git Hooks (Automation Scripts):
+# Git runs hook scripts in the .git/hooks directory
+# Examples: pre-commit, pre-push, post-commit
+# Rename sample files like pre-commit.sample to pre-commit to activate
+
+----------------------------
+
+Rewriting History:
+git commit --amend                     # Modify the last commit
+git rebase -i HEAD~3                   # Interactively squash or reorder last 3 commits
+
+----------------------------
+
+Reverting Commits:
+git revert <commit-hash>              # Undo a commit safely by creating a new one
+
+----------------------------
+
+Squashing Commits:
+git rebase -i HEAD~n                   # Use "squash" to combine n commits into one
+
+----------------------------
+
+Force Push (Use With Caution):
+git push --force-with-lease            # Force push safely after rebasing
+
+----------------------------
+
+Archiving Repository:
+git archive -o release.zip HEAD        # Create a zip archive of the current repo
+
+----------------------------
+
+Searching:
+git log --grep="search term"           # Search commit messages
+git log -S "someCode()"                # Search for a code change in history
+
+----------------------------
+
+Multiple Remotes:
+git remote add upstream <url>          # Add a second remote
+git fetch upstream                     # Fetch from the upstream remote
+git push upstream <branch>             # Push to upstream remote
+
+----------------------------
+
+Bare Repository (for Git servers):
+git init --bare                        # Create a repository that only hosts code, no working directory
+
+----------------------------
+
+Ignored Files:
+git ls-files --others -i --exclude-standard   # Show ignored files
+
+----------------------------
