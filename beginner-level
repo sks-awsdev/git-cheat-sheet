@@ -1,2 +1,53 @@
-```
-git status
+Git Beginner Commands Cheat Sheet
+
+This repository contains basic Git commands for beginners to learn and practice version control using Git and GitHub.
+
+----------------------------
+
+Setup Your Git Identity:
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+----------------------------
+
+Create or Clone a Repository:
+git init                          # Initialize a new local Git repository
+git clone <repository-url>        # Clone an existing GitHub repository
+
+----------------------------
+
+Working with Files:
+git status                        # Check the status of files
+git add <filename>                # Add a specific file to staging
+git add .                         # Add all files to staging
+
+----------------------------
+
+Committing Changes:
+git commit -m "your commit message"   # Commit changes with a message
+
+----------------------------
+
+Working with GitHub:
+git remote add origin <repo-url>      # Add a remote repository
+git push origin main                  # Push changes to GitHub (main branch)
+git pull origin main                  # Pull latest changes from GitHub
+
+----------------------------
+
+Branching:
+git branch <branch-name>              # Create a new branch
+git checkout <branch-name>           # Switch to an existing branch
+git checkout -b <branch-name>        # Create and switch to a new branch
+git merge <branch-name>              # Merge a branch into the current branch
+git branch -d <branch-name>          # Delete a local branch
+
+----------------------------
+
+Viewing History:
+git log                               # View commit history
+git log --oneline                     # View simplified log
+
+----------------------------
+
+Use this as a reference to practice and understand basic Git operations.
