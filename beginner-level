@@ -1,9 +1,3 @@
-Git Beginner Commands Cheat Sheet
-
-This repository contains basic Git commands for beginners to learn and practice version control using Git and GitHub.
-
-----------------------------
-
 Setup Your Git Identity:
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
@@ -49,5 +43,3 @@ git log                               # View commit history
 git log --oneline                     # View simplified log
 
 ----------------------------
-
-Use this as a reference to practice and understand basic Git operations.
